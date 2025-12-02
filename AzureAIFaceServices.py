@@ -18,13 +18,14 @@ FaceAttributeTypeDetection01.GLASSES
 
 ]
 
-with open("face.avif","rb") as image_file:
+with open("face.jpg","rb") as image_file:
     image_details=image_file.read()
 
 response=client.detect(
     image_content=image_details, 
                        detection_model=FaceDetectionModel.DETECTION01,
                        recognition_model=FaceRecognitionModel.RECOGNITION01,
-                       return_face_id=False
+                       return_face_id=False,
+                       return_face_attributes=face_features
                        )
-print(json.dumps(response.as_dict(), indent=4))
+print(response)
