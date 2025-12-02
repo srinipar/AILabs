@@ -1,0 +1,5 @@
+POST  https://visionsrini.cognitiveservices.azure.com/computervision/imageanalysis:analyze?features=caption,tags,read&model-version=latest&language=en&api-version=2024-02-01
+Content-Type: application/octet-stream
+Ocp-Apim-Subscription-Key:3gVCvdUB4zxaOd8vPUP1QKz7gdzWNENqs9pJUFwdiE9I0QZtczosJQQJ99BLACYeBjFXJ3w3AAAFACOG4NnJ
+
+< ./quote.png
