@@ -1,5 +1,8 @@
-<speak version="1.0" xml:lang:"en-US">
+<speak version="1.0" xml:lang="en-US">
     <voice name="en-US-SteffanMultilingualNeural">
-    GenAI, or generative artificial intelligence, is a type of AI that can create new, original content by learning patterns from massive amounts of existing data. Unlike traditional AI, which is designed to recognize and classify data, GenAI can produce fresh text, images, videos, audio, and more
+        GenAI, or generative artificial intelligence, is a type of AI that can create new, 
+        original content by learning patterns from massive amounts of existing data. Unlike traditional AI,
+         which is designed to recognize and classify data, GenAI can produce fresh text, images, videos, audio, 
+         and more
     </voice>
 </speak>

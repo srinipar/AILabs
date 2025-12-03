@@ -20,3 +20,10 @@ result=speech_generator.speak_ssml(ssmConfigs)
 
 if result.reason==speechsdk.ResultReason.SynthesizingAudioCompleted:
     print("Done")
+else:
+    if result.reason == speechsdk.ResultReason.Canceled:
+        cancellation_details = result.cancellation_details
+        print("Recognition canceled: {}".format(cancellation_details.reason))
+
+    if cancellation_details.reason == speechsdk.CancellationReason.Error:
+        print("Error details: {}".format(cancellation_details.error_details))
