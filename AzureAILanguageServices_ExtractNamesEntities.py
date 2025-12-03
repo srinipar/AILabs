@@ -7,17 +7,16 @@ client = TextAnalyticsClient(
     endpoint="https://ailangservice200.cognitiveservices.azure.com/",
     credential=AzureKeyCredential(
         "5JXc0vdxUB1XwA9jk9sp11oV7a90Bwg0inYrskyLvF7T6fjUewQxJQQJ99BLACYeBjFXJ3w3AAAaACOGzaTz")
-)
-
- 
-
-response=client.detect_language(
+) 
+response=client.recognize_entities(
     documents=[
-   "நான்" ,
-           
-                "ನಮಸ್ಕಾರ"
-          ]
+                "I am srini, working as Consultant, it is not good" , 
+                "My finance are great",
+                "Microsoft is great"
+    ]
 
     
 )
-print(response)
+
+for resp in response: 
+    print(resp.entities )
