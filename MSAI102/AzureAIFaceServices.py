@@ -18,7 +18,7 @@ FaceAttributeTypeDetection01.GLASSES
 
 ]
 
-with open("face.jpg","rb") as image_file:
+with open("Assets/face.jpg","rb") as image_file:
     image_details=image_file.read()
 
 response=client.detect(
