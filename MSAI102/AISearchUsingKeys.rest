@@ -1,0 +1,10 @@
+post  https://aisearch20001.search.windows.net/Indexes/azureblob-index1/docs/search.index?api-version=2020-06-30
+Content-Type: application/json
+api-key:REzIWVK65Ceo0Cluaw9FC5YVTswaXi9znvbWLXsLZPAzSeCfqyp9
+
+{
+     "search": "what is his image",
+      "searchMode": "any",
+      "queryType": "Simple"
+    }
+  
