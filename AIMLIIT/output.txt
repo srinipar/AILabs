@@ -4,3 +4,4 @@ Appending new line 1.
 Appending new line 1.
 Appending new line 1.
 Appending new line .
+Appending new line .
