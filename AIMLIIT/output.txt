@@ -1,0 +1,6 @@
+This is a sample output file.
+Writing some data to the file.
+Appending new line 1.
+Appending new line 1.
+Appending new line 1.
+Appending new line .
