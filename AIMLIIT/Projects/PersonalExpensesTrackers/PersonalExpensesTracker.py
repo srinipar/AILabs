@@ -24,11 +24,11 @@ while True:
     expenses = []  # List to store expenses
     print("################################### Welcome to Monthly Budget Tracker ###################################")
     print(" **** Your Monthly Budget is $2000 **** ")
-    print("1. Add Expense")
-    print("2. View Expenses")
-    print("3. Track Remaining Budget")
-    print("4. Save the Expenses to a File")
-    print("5. Exit")
+    print("1. Add Expense                          |  Your Monthly Budget is $2000")
+    print("2. View Expenses                        |  ")
+    print("3. Track Remaining Budget               |  Your Remaining Budget is $2000")
+    print("4. Save the Expenses to a File          |")
+    print("5. Exit                                 |")
     print("################################### Welcome to Monthly Budget Tracker ###################################")
     choice = input("Enter your choice: ")
     if choice == '1': #Add Expense Option so call the function to add expense
