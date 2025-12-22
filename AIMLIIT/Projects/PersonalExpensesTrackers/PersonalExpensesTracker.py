@@ -4,6 +4,7 @@ import pandas as pd
 
 expenses = []  # List to store expenses
 fileName_Budget = 'budget.txt'  # File to store budget information
+fileName_Expenses = 'expenses.csv'  # File to store expenses information
 
 def get_monthly_budget():
     '''This is function to get the monthly budget from the file'''
@@ -21,9 +22,8 @@ def get_monthly_budget():
         file_Budget.close()  #Close the Budget file
         return local_monthly_budget 
     
-#check for Expenses file existence
-fileName_Expenses = 'expenses.csv'  # File to store expenses information
-if os.path.exists(fileName_Expenses):
+
+if os.path.exists(fileName_Expenses):#check for Expenses file existence
     file_Expenses=open(fileName_Expenses, 'r')  #Open the Expenses file in read mode
     lines = file_Expenses.readlines()  #Read all lines from expense file
     consumed_amount = 0.0  #Variable to store the total consumed amount
