@@ -5,7 +5,6 @@ import pandas as pd
 expenses = []  # List to store expenses
 fileName_Budget = 'budget.txt'  # File to store budget information
 fileName_Expenses = 'expenses.csv'  # File to store expenses information
-
 def get_monthly_budget():
     '''This is function to get the monthly budget from the file'''
     #Check for Budget file existence
@@ -40,8 +39,6 @@ if os.path.exists(fileName_Expenses):#check for Expenses file existence
     
     file_Expenses.close()  #Close the Expenses file
  
-    
-
 #Function to add the expense
 def add_expense()->bool :
     '''This is function to add the expenses. It will get Date of Expenses (YYYY-MM-DD), 
@@ -172,4 +169,3 @@ while True:
         break
     else:
         print("Invalid choice. Please try again.") #Invalid choice handling
-
