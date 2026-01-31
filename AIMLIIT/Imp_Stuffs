@@ -8,3 +8,41 @@ Library for Webscrapping
 beautifulsoup   - html
 scrappy         - Data Extraction
 
+Statistics
+-----------
+Descrptive Statistics -
+inferential Statistics
+Predictive Statistics
+
+EDA (Exploratory Data Analysis) 
+
+Exploratory Data Analysis (EDA) is the process of understanding, summarizing, and visualizing data before applying any statistical models or machine learning algorithms
+
+Common Terms
+-------------
+
+Population & Sample : The population is the complate data pool from which a sample is dawn for further analysis, The same is a subset of the population
+
+Measurement and Same Data : A measurement is a number or attribute calcualted for each member of the population or sample. The mesaurement of the sample members are collectively called sample data
+
+Parameter : it is a characterstic of the population that you want to estimate or test, such as the population mean
+
+Variable : A variable is something that can take on different values in the dataset
+
+Distribution : It refers to how sample data is spead across a range of value
+
+Type of Sampling
+----------------
+
+2 Type of sampling
+
+1. Probablistic Sampling
+    1. Random Sampling -- every student has equal to get selected for icecream
+    2. Systematic Random Sampling -- Every 10th emp will get hike, 
+    3. Cluster Probablistic Sampling - Particular area
+    4. Stratified Sample - put people in group, ratio to be proper
+2. Non Probablistic sampling
+    1. Convenience
+    2. Quota
+    3. Judgement
+    4. Snowball
