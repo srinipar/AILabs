@@ -10,12 +10,12 @@ client = AzureOpenAI(
  
 response = client.images.generate(
     model="dall-e-3",
-    prompt="A Dog",
+    prompt="A Dog playing with a ball in the park, digital art",
     n=1,
     size="1024x1024"
 )
 image1_url=response.data[0].url
 image1_data=requests.get(image1_url).content
-with open("imagegeneration1.png", "wb") as handler:
-    handler.write(image1_data)
+with open("Assets//imagegeneration1.png", "wb") as file_writer:
+    file_writer.write(image1_data)
 print("Done")
