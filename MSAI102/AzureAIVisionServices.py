@@ -10,10 +10,11 @@ client = ImageAnalysisClient(
     credential=AzureKeyCredential(
         "3gVCvdUB4zxaOd8vPUP1QKz7gdzWNENqs9pJUFwdiE9I0QZtczosJQQJ99BLACYeBjFXJ3w3AAAFACOG4NnJ")
 )
-with open("E1.png","rb") as image_file:
+with open("Assets\\E1.png","rb") as image_file:
     image_details=image_file.read()
 
 response=client.analyze(image_data=image_details, visual_features=[VisualFeatures.TAGS])
-for brand in response.brands:
-    print(f"Brand Name: {brand.name}, Confidence Score: {brand.confidence}")
+#print("Tags:", response)
+#for brand in response.brands:
+#    print(f"Brand Name: {brand.name}, Confidence Score: {brand.confidence}")
 print(json.dumps(response.as_dict(), indent=4))

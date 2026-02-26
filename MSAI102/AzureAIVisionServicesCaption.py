@@ -10,7 +10,7 @@ client = ImageAnalysisClient(
     credential=AzureKeyCredential(
         "3gVCvdUB4zxaOd8vPUP1QKz7gdzWNENqs9pJUFwdiE9I0QZtczosJQQJ99BLACYeBjFXJ3w3AAAFACOG4NnJ")
 )
-with open("E1.png","rb") as image_file:
+with open("assets//E1.jpg","rb") as image_file:
     image_details=image_file.read()
 
 response=client.analyze(image_data=image_details, visual_features=[VisualFeatures.CAPTION])

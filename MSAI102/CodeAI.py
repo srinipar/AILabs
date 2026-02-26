@@ -7,7 +7,7 @@ client = AzureOpenAI(
     azure_endpoint="https://srini-mih5qttt-eastus2.cognitiveservices.azure.com/",
     api_key="951MeJX1BMHjXcyY6QfrHXiRX5afcAO3xl3k9kdx7OnPuLkSD91wJQQJ99BKACHYHv6XJ3w3AAAAACOGjUHk",
 )
-with open("01.py","r",encoding="utf-8") as  code_file:
+with open("MSAI102\\firstpython.py","r",encoding="utf-8") as  code_file:
     code=code_file.read()
 response = client.chat.completions.create(
     messages=[
