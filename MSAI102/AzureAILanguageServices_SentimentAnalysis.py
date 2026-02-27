@@ -12,10 +12,7 @@ response=client.analyze_sentiment(
     documents=[
                 "I am srini, working as Consultant, it is not good" , 
                 "My finance are great"
-    ]
-
-    
+    ]   
 )
-
 for resp in response: 
     print(f"{resp.sentences[0]} : {resp.sentiment[0]}" )
